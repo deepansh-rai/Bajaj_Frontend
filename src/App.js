@@ -18,7 +18,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedData = JSON.parse(jsonInput);
-      const res = await axios.post("https://bajaj-backend-dbzp.onrender.com", {
+      const res = await axios.post("https://bajaj-backend-dbzp.onrender.com/api/v1/bfhl", {
         data: parsedData,
       });
       setResponseData(res.data);
